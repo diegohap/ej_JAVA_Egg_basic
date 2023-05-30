@@ -21,6 +21,7 @@ public class Ej12 {
     public static boolean checkFDE(String bufferIn){
         return bufferIn.equals("&&&&&");
     }
+
     public static boolean checkBufferIntegrity(String bufferIn){
         return ((bufferIn.charAt(0) == 'X' && bufferIn.charAt(bufferIn.length()-1) == 'O') || checkFDE(bufferIn));
     }
