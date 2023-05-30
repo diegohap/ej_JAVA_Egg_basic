@@ -15,6 +15,5 @@ public class Ej17 {
         for (int i=1; i<conteo.length; i++) {
             System.out.println("Cantidad de números con " + i + " dígito(s): " + conteo[i]);
         }
-
     }
 }
