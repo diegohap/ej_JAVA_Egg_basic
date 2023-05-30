@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.stream.IntStream;
 
 public class Ej17 {
     public static void main(String[] args) {
@@ -12,8 +13,7 @@ public class Ej17 {
                 .filter(digitos -> digitos <= 5)
                 .forEach(digitos -> conteo[digitos]++);
 
-        for (int i=1; i<conteo.length; i++) {
-            System.out.println("Cantidad de números con " + i + " dígito(s): " + conteo[i]);
-        }
+        IntStream.range(1, conteo.length)
+                 .forEach(i -> System.out.println("hay " + conteo[i] + " numeros con " + i + " digito/s"));
     }
 }
