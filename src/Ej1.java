@@ -7,5 +7,6 @@ public class Ej1 {
         int a = teclado.nextInt();
         int b = teclado.nextInt();
         System.out.println("suma= " + (a+b) );
+        teclado.close();
     }
 }

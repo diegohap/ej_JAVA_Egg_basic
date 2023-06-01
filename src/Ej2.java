@@ -6,5 +6,6 @@ public class Ej2 {
         System.out.println("ingrese su nombre");
         String nombre = teclado.next();
         System.out.println("hola " + nombre);
+        teclado.close();
     }
 }

@@ -8,5 +8,6 @@ public class Ej5 {
         System.out.println("doble= " + num*2);
         System.out.println("triple= " + num*3);
         System.out.println("raiz 2= " + Math.sqrt(num));
+        teclado.close();
     }
 }

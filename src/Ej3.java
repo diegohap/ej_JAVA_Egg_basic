@@ -7,5 +7,6 @@ public class Ej3 {
         String frase = teclado.nextLine();
         System.out.println(frase.toLowerCase());
         System.out.println(frase.toUpperCase());
+        teclado.close();
     }
 }

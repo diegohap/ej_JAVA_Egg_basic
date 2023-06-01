@@ -7,5 +7,6 @@ public class Ej4 {
         System.out.println("ingrese una temperatura en °C");
         double tempC = teclado.nextDouble();
         System.out.println("equivale a " + (32+(9*tempC/5)) + "°F");
+        teclado.close();
     }
 }

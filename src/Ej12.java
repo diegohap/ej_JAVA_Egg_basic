@@ -16,6 +16,7 @@ public class Ej12 {
         } while (!checkFDE(buffer));
         System.out.println("buffer OK = " + ok);
         System.out.println("buffer NO OK = " + noOk);
+        teclado.close();
     }
 
     public static boolean checkFDE(String bufferIn){

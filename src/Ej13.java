@@ -20,5 +20,6 @@ public class Ej13 {
 
         for(int i=0; i<lado; i++)
             System.out.print("*");
+        teclado.close();
     }
 }

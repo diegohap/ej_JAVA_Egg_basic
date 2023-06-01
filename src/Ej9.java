@@ -9,5 +9,6 @@ public class Ej9 {
             System.out.println("CORRECTO");
         else
             System.out.println("INCORRECTO");
+        teclado.close();
     }
 }

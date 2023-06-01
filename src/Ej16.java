@@ -24,5 +24,6 @@ public class Ej16 {
         IntStream.range(0, vec.length)
                  .filter(i -> vec[i] == num)
                  .forEach(System.out::println);
+        teclado.close();
     }
 }

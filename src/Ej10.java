@@ -10,5 +10,6 @@ public class Ej10 {
             System.out.println("ingrese un numero");
             var = teclado.nextInt();
         } while (var < limite);
+        teclado.close();
     }
 }

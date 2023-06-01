@@ -18,6 +18,7 @@ public class Ej14 {
                 default -> System.out.println("opcion incorrecta");
             }
         }
+        teclado.close();
     }
     public static void showMenuText(){
         System.out.println("Ingrese una opcion");

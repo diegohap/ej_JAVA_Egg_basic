@@ -9,5 +9,6 @@ public class Ej6 {
             System.out.println("PAR");
         else
             System.out.println("IMPAR");
+        teclado.close();
     }
 }
