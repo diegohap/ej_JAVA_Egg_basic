@@ -8,31 +8,25 @@ public class Ej11 {
             showMenuText();
             op = teclado.nextInt();
             switch (op) {
-                case 1:
-                    System.out.println("suma= " + (a+b));
-                    break;
-                case 2:
-                    System.out.println("resta= " + (a-b));
-                    break;
-                case 3:
-                    System.out.println("mult= " + (a*b));
-                    break;
-                case 4:
-                    if(b != 0)
-                        System.out.println("div= " + (a/b));
+                case 1 -> System.out.println("suma= " + (a + b));
+                case 2 -> System.out.println("resta= " + (a - b));
+                case 3 -> System.out.println("mult= " + (a * b));
+                case 4 -> {
+                    if (b != 0)
+                        System.out.println("div= " + (a / b));
                     else
                         System.out.println("no se puede dividir por 0(zero)");
-                    break;
-                case 5:
+                }
+                case 5 -> {
                     System.out.println("ingrese dos numeros");
                     a = teclado.nextInt();
                     b = teclado.nextInt();
-                    break;
-                case 6:
+                }
+                case 6 -> {
+                    
                     System.out.println("Fin de programa...");
-                    break;
-                default:
-                    System.out.println("opcion incorrecta");
+                }
+                default -> System.out.println("opcion incorrecta");
             }
         }
         teclado.close();
