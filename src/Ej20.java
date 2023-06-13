@@ -14,24 +14,24 @@ public class Ej20 {
 
     public static boolean isMagicMat(int[][] mat){
         int suma = Arrays.stream(mat[0]).sum();
-        boolean valid = false;
+        boolean valid = true;
 
         // valida filas
-        valid |=Arrays.stream(mat)
+        valid &=Arrays.stream(mat)
                       .allMatch(row -> Arrays.stream(row).sum() == suma);
 
         // valida columnas
-        valid |= IntStream.range(0, mat.length)
+        valid &= IntStream.range(0, mat.length)
                          .allMatch(j -> Arrays.stream(mat)
                                               .mapToInt(row -> row[j]).sum() == suma);
 
         // valida diagonal principal
-        valid |= Arrays.stream(mat)
+        valid &= Arrays.stream(mat)
                        .mapToInt(row -> row[Arrays.asList(mat).indexOf(row)])
                        .sum() == suma;
 
         // valida diagonal inversa
-        valid |= Arrays.stream(mat)
+        valid &= Arrays.stream(mat)
                 .mapToInt(row -> row[mat.length - 1 - Arrays.asList(mat).indexOf(row)])
                 .sum() == suma;
 
